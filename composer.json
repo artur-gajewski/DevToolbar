@@ -1,0 +1,33 @@
+{
+    "name": "artur-gajewski/dev-toolbar",
+    "description": "This module provides a toolbar for your project's development to easily fetch memory usage information, tail of Apache's access and error logs as well as phpinfo(), all from their own tab in the toolbar.",
+    "type": "module",
+    "keywords": [
+        "zf2",
+        "developer",
+        "toolbar",
+        "debug",
+    ],
+    "homepage": "https://github.com/artur-gajewski/DevToolbar",
+    "authors": [
+        {
+            "name": "Artur Gajewski",
+            "email": "info@arturgajewski.com",
+            "homepage": "https://github.com/artur-gajewski"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "dev-master",
+        "rwoverdijk/assetmanager": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "DevToolbar": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
