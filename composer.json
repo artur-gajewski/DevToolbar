@@ -6,7 +6,7 @@
         "zf2",
         "developer",
         "toolbar",
-        "debug",
+        "debug"
     ],
     "homepage": "https://github.com/artur-gajewski/DevToolbar",
     "authors": [
