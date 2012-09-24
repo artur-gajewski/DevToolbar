@@ -93,6 +93,17 @@ access_log_rows: How many rows to display from the end of access_log
 error_log_rows: How many rows to display from the end of error_log
 
 
+## Generate DevToolbar into your layout
+
+In order to generate DevToolbar and make it visible, all you have to do now is use the DevToolbar view helper to get it:
+
+```php
+<?php echo $this->getDevToolbar("toolbar"); ?>
+```
+
+Usually this should be placed right before the ending body tag, depending on your layout and preference.
+
+
 ## Using DevToolbar
 
 When you click on any of the tabs, the current information is fetched from the server. Click on the tab to show it's contents.
