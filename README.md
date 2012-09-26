@@ -68,6 +68,7 @@ If you want to override the bundled package with newer version, you can override
 'params' => array(
     // DevToolbar settings
     'enabled'                  => true,
+    'activator'                => '__debug',
     'access_log'               => '/usr/local/zend/apache2/logs/access_log',
     'error_log'                => '/usr/local/zend/apache2/logs/error_log',
     'access_log_rows'          => 20,
@@ -88,6 +89,7 @@ If you want to override the bundled package with newer version, you can override
 There are few parameters that you can configure your DevToolbar with:
 
 enabled: wether the DevToolbar should be displayed
+activator: GET parameter to activate DebToolbar's view helper to render out the toolbar.
 show_phpinfo: toggle phpinfo() tab
 access_log_rows: How many rows to display from the end of access_log
 error_log_rows: How many rows to display from the end of error_log
@@ -106,7 +108,15 @@ Usually this should be placed right before the ending body tag, depending on you
 
 ## Using DevToolbar
 
-When you click on any of the tabs, the current information is fetched from the server. Click on the tab to show it's contents.
+When loaded, DevToolbar is not visible on page, you need to add a GET parameter to the URL corresponding to the "activator" setting in the config to show the DevToolbar.
+
+The following example activates the DevToolbar on the application's web page.
+
+```php
+http://www.myapp.com?__debug
+```
+
+Once DevToolbar is visible, when you click on any of the tabs the current information is fetched from the server.
 
 
 ## Questions or comments?

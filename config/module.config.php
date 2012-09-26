@@ -7,6 +7,7 @@ return array(
         'params' => array(
             // DevToolbar settings
             'enabled'                  => true,
+            'activator'                => '__debug',
             'access_log'               => '/usr/local/zend/apache2/logs/access_log',
             'error_log'                => '/usr/local/zend/apache2/logs/error_log',
             'access_log_rows'          => 20,

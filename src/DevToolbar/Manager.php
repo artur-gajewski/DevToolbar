@@ -88,10 +88,11 @@ class Manager
         $html .= '</div>';
         
         if ($this->params['enabled']) {
-            return $html;
-        } else {
-            return '';
+            if (isset($this->params['activator']) && isset($_GET[$this->params['activator']])) {
+                return $html;
+            }
         }
+        return '';
     }
     
 }
